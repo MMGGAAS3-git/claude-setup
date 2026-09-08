@@ -3,7 +3,7 @@
 Личная настройка Claude Code, которая разворачивается на новой машине одной командой.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/__OWNER__/claude-setup/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/MMGGAAS3-git/claude-setup/main/install.sh | bash
 ```
 
 ## Что внутри

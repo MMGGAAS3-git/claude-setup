@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Полная настройка Claude Code на новой машине — одной командой.
 #
-#   curl -fsSL https://raw.githubusercontent.com/__OWNER__/claude-setup/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/MMGGAAS3-git/claude-setup/main/install.sh | bash
 #
 # Что делает:
 #   1. находит бинарь claude (PATH, расширение VSCode, npm);
@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-SETUP_REPO="${CC_SETUP_REPO:-__OWNER__/claude-setup}"
+SETUP_REPO="${CC_SETUP_REPO:-MMGGAAS3-git/claude-setup}"
 SETUP_MARKETPLACE="dmitry-claude-setup"
 TACHES_REPO="glittercowboy/taches-cc-prompts"
 TACHES_MARKETPLACE="taches-cc-resources"
