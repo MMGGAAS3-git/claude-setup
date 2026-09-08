@@ -1,0 +1,15 @@
+{
+  "name": "dmitry-core",
+  "description": "Standing rules injected at session start, plus meta-prompting and context7 MCP",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dmitry"
+  },
+  "keywords": ["personal", "rules", "meta-prompting"],
+  "dependencies": [
+    {
+      "name": "taches-cc-resources",
+      "marketplace": "taches-cc-resources"
+    }
+  ]
+}

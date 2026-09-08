@@ -1,0 +1,19 @@
+{
+  "name": "dmitry-claude-setup",
+  "owner": {
+    "name": "Dmitry"
+  },
+  "metadata": {
+    "description": "Personal Claude Code setup: standing rules, meta-prompting, MCP",
+    "version": "1.0.0"
+  },
+  "allowCrossMarketplaceDependenciesOn": ["taches-cc-resources"],
+  "plugins": [
+    {
+      "name": "dmitry-core",
+      "source": "./plugins/dmitry-core",
+      "description": "Standing rules injected at session start, plus meta-prompting and context7 MCP",
+      "version": "1.0.0"
+    }
+  ]
+}

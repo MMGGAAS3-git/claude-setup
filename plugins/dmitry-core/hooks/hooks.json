@@ -1,0 +1,18 @@
+{
+  "description": "Injects Dmitry's standing rules into the system prompt at session start",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/scripts/inject-rules.py",
+            "timeout": 10,
+            "statusMessage": "Загружаю личные правила…"
+          }
+        ]
+      }
+    ]
+  }
+}
