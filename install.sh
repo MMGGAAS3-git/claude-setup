@@ -7,7 +7,7 @@
 #   1. находит бинарь claude (PATH, расширение VSCode, npm);
 #   2. подключает два маркетплейса и ставит плагин dmitry-core
 #      (taches-cc-resources подтягивается как его зависимость);
-#   3. аккуратно domешивает нужные ключи в ~/.claude/settings.json,
+#   3. аккуратно домешивает нужные ключи в ~/.claude/settings.json,
 #      не трогая всё остальное.
 #
 # Скрипт идемпотентен: повторный запуск ничего не ломает.
@@ -71,9 +71,13 @@ except Exception as exc:
     print("    прежний settings.json нечитаем (%s), отложен в %s" % (exc, backup))
     data = {}
 
-data["model"] = "opus"
-data["effortLevel"] = "xhigh"
+# opusplan: Sonnet 5.5 в обычной работе, Opus 5.5 в plan mode. Уровни усилия по моделям:
+# дефолт «high», а не «xhigh» (xhigh заметно дороже; глубокое мышление — у агента architect).
+data["model"] = "opusplan"
+data["effortLevel"] = "high"
 data["agentPushNotifEnabled"] = True
+for _model, _level in (("claude-sonnet-5-5", "high"), ("claude-opus-5-5", "high")):
+    data.setdefault("modelSettings", {}).setdefault(_model, {}).setdefault("effortLevel", _level)
 
 perms = data.setdefault("permissions", {})
 allow = perms.setdefault("allow", [])

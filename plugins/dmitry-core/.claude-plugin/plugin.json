@@ -1,11 +1,16 @@
 {
   "name": "dmitry-core",
-  "description": "Standing rules injected at session start, plus meta-prompting and context7 MCP",
-  "version": "1.0.0",
+  "description": "Standing rules injected at session start, model routing agents, usage review, meta-prompting and context7 MCP",
+  "version": "1.1.0",
   "author": {
     "name": "Dmitry"
   },
-  "keywords": ["personal", "rules", "meta-prompting"],
+  "keywords": [
+    "personal",
+    "rules",
+    "meta-prompting",
+    "model-routing"
+  ],
   "dependencies": [
     {
       "name": "taches-cc-resources",

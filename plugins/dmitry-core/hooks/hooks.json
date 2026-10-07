@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/scripts/inject-rules.py",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/inject-rules.py\"",
             "timeout": 10,
             "statusMessage": "Загружаю личные правила…"
           }

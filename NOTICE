@@ -1,0 +1,5 @@
+dmitry-core's `reviewer` agent borrows its anti-noise review discipline (evidence required
+per finding, zero findings is a valid result, HIGH/CRITICAL need proof) from the
+code-reviewer agent in affaan-m/ECC (https://github.com/affaan-m/ECC), MIT License,
+Copyright (c) 2026 Affaan Mustafa. The size-tier idea behind the task-size rules in
+rules/RULES.md is adapted from ECC's orch-pipeline skill. Everything else is original.

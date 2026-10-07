@@ -4,16 +4,18 @@
     "name": "Dmitry"
   },
   "metadata": {
-    "description": "Personal Claude Code setup: standing rules, meta-prompting, MCP",
-    "version": "1.0.0"
+    "description": "Personal Claude Code setup: standing rules, model routing, meta-prompting, MCP",
+    "version": "1.1.0"
   },
-  "allowCrossMarketplaceDependenciesOn": ["taches-cc-resources"],
+  "allowCrossMarketplaceDependenciesOn": [
+    "taches-cc-resources"
+  ],
   "plugins": [
     {
       "name": "dmitry-core",
       "source": "./plugins/dmitry-core",
-      "description": "Standing rules injected at session start, plus meta-prompting and context7 MCP",
-      "version": "1.0.0"
+      "description": "Standing rules at session start, model-routing agents (Haiku/Sonnet 5.5/Opus 5.5), usage review, meta-prompting, context7 MCP",
+      "version": "1.1.0"
     }
   ]
 }
